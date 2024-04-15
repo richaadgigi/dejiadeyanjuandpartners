@@ -1,0 +1,57 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-primary: hsl(215, 28%, 8%);
+    --color-secondary: #D1B06B;
+    --color-accent: #1F2732;
+    --color-gray: #2E3947;
+}
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.dap-bg-primary {
+    background-color: var(--color-primary);
+}
+.dap-bg-accent {
+    background-color: var(--color-accent);
+}
+.dap-bg-secondary {
+    background-color: var(--color-secondary);
+}
+.dap-bg-gray {
+    background-color: var(--color-gray);
+}
+.dap-btn-border {
+    border: 1px solid var(--color-accent);
+}
+.dap-scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.dap-scrollable::-webkit-scrollbar {
+    display: none;
+}
+.dap-footer-subscribe {
+    border: 1px solid var(--color-white);
+    height: 56px;
+    border-radius: 40px;
+}
+.dap-footer-subscribe > input {
+    width: calc(100% - 52px);
+    padding: 4px 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 90%;
+    color: var(--color-white);
+}
+.dap-footer-subscribe > button {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    outline: none;
+    border-radius: 50%;
+    border: none;
+}
