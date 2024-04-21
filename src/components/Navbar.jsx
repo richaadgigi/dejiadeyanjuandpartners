@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavbarLogo from "../assets/images/logo-white.png";
 
 const Navbar = () => {
     return (
         <nav className='dap-bg-primary xui-text-white xui-navbar xui-container xui-navbar-blurred' brand="true" layout="1" menu="2">
             <div className="brand">
                 <Link className="xui-text-dc-none xui-text-inherit xui-d-inline-flex xui-flex-ai-center" to={'/'}>
-                    <img className='xui-img-200' src="https://res.cloudinary.com/xnyder/image/upload/v1704880691/alphaprofit/brand/alphaprofit_toeclk.webp" alt="logo" />
+                    <img className='xui-img-200' src={NavbarLogo} alt="logo" />
                 </Link>
             </div>
             <div className="links" placed="left">

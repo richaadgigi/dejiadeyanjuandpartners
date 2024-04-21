@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Email, LogoInstagram, LogoX, Phone } from '@carbon/icons-react';
+import Logo from "../assets/images/logo-square-white.png"
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
             <div className='xui-row'>
                 <div className='xui-col-12 xui-lg-col-5 xui-lg-pr-2'>
                     <div className='xui-d-inline-flex xui-flex-ai-center xui-grid-gap-half'>
-                        <img className='xui-img-40' src="https://cdn0.iconfinder.com/data/icons/circle-icons/512/new_york_times.png" alt="logo" />
+                        <img className='xui-img-40 xui-bdr-rad-circle' src={Logo} alt="logo" />
                         <span className='xui-font-w-700'>THE DAP</span>
                     </div>
                     <p className='xui-font-sz-85 xui-opacity-5 xui-line-height-2 xui-lg-w-fluid-90 xui-mt-1'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui odio, ipsum sint excepturi quam.</p>
