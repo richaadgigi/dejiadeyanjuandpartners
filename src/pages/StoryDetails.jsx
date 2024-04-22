@@ -1,35 +1,47 @@
 import axios from 'axios';
 import moment from 'moment';
 import React, { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const StoryDetails = () => {
+    const navigate = useNavigate();
     const [ story, setStory ] = useState(null);
+    const { stripped } = useParams();
     useEffect(() => {
         axios({
             method: "GET",
-            url: "https://api.dejiadeyanjuandpartners.com/public/post/stripped?stripped=something-happening-in-the-tech-industry-in-alias-with-the-law-firms-of-nigeria"
+            url: `https://api.dejiadeyanjuandpartners.com/public/post/stripped?stripped=${stripped}`
         })
         .then((res) => {
             setStory(res.data.data);
             window.xuiLazyLoadings();
         })
         .catch((err) => {
-            console.log(err);
+            navigate('/stories');
         })
         .finally(() => {
         });
     }, []);
     return (
         <>
-        {story && <section className='xui-container xui-py-3 xui-lg-py-5'>
-            <h1 className='xui-font-sz-200 xui-lg-font-sz-300 xui-line-height-4-half xui xui-lg-w-fluid-70'>{story.title}</h1>
+        {!story && <section className='xui-container xui-py-3 xui-lg-py-5'>
+            <h1 className={'xui-font-sz-200 xui-lg-font-sz-300 xui-line-height-4-half xui xui-lg-w-fluid-70 xui--skeleton'}>{'Something happening in the tech industry in alias with the law firms of Nigeria'}</h1>
             <div className='xui-d-inline-flex xui-flex-ai-center xui-flex-jc-space-between xui-grid-gap-1'>
-                <span className='xui-font-w-700 xui-font-sz-85 dap-text-secondary xui-text-uppercase'>{story.category.name}</span>
+                <span className={'xui-font-w-700 xui-font-sz-85 dap-text-secondary xui-text-uppercase xui--skeleton'}>{'Justice'}</span>
                 <div className='xui-w-5 xui-h-5 xui-bg-black'></div>
-                <span className='xui-font-sz-75 xui-opacity-7'>{moment(story.createdAt).format('MMMM Do, YYYY')}</span>
+                <span className={'xui-font-sz-75 xui-opacity-7 xui--skeleton'}>{'June 11th, 2023'}</span>
             </div>
-            <img className='xui-my-2 xui-h-200 xui-lg-h-400 xui-w-fluid-100' src={story.image} alt="story image" />
-            <div className='xui-line-height-2'>{story.details}</div>
+            <div className={'xui-my-2 xui-h-200 xui-lg-h-400 xui-w-fluid-100 xui-bg-pos-center xui-bg-sz-cover xui--skeleton'}></div>
+        </section>}
+        {story && <section className='xui-container xui-py-3 xui-lg-py-5'>
+            <h1 className={'xui-font-sz-200 xui-lg-font-sz-300 xui-line-height-4-half xui xui-lg-w-fluid-70 ' + (!story && 'xui--skeleton')}>{story.title}</h1>
+            <div className='xui-d-inline-flex xui-flex-ai-center xui-flex-jc-space-between xui-grid-gap-1'>
+                <span className={'xui-font-w-700 xui-font-sz-85 dap-text-secondary xui-text-uppercase ' + (!story && 'xui--skeleton')}>{story.category.name}</span>
+                <div className='xui-w-5 xui-h-5 xui-bg-black'></div>
+                <span className={'xui-font-sz-75 xui-opacity-7 ' + (!story && 'xui--skeleton')}>{moment(story.createdAt).format('MMMM Do, YYYY')}</span>
+            </div>
+            <div className={'xui-my-2 xui-h-200 xui-lg-h-400 xui-w-fluid-100 xui-bg-lazy xui-bg-pos-center xui-bg-sz-cover ' + (!story && 'xui--skeleton')} xui-bg-img={story.image}></div>
+            <div className={'xui-line-height-2 ' + (!story && 'xui--skeleton')}>{story.details}</div>
         </section>}
         </>
     );

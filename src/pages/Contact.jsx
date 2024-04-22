@@ -12,7 +12,7 @@ const Contact = () => {
         formData.email = email.current.value;
         formData.subject = "New Message";
         formData.message = message.current.value;
-        window.open("mailto:support@alphaprofit.co?subject="+ formData.subject +"&body="+ encodeURI(formData.message));
+        window.open("mailto:info@http://dejiadeyanjuandpartners.com/?subject="+ formData.subject +"&body="+ encodeURI(formData.message));
     }
     return (
         <>

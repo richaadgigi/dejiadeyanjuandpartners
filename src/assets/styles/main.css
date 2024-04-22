@@ -65,6 +65,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 2000;
 }
 .xui-modal {
     background-color: rgba(0, 0, 0, .7);
@@ -72,4 +73,14 @@ body {
 }
 .xui-modal-content {
     min-height: 100vh;
+}
+.dap-story-box {
+    padding-bottom: 250px;
+    position: relative;
+}
+.dap-story-box-image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
