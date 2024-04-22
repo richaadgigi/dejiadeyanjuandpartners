@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Stories from './pages/Stories';
 import Contact from './pages/Contact';
+import StoryDetails from './pages/StoryDetails';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route index path='/' element={<Index />} />
                 <Route index path='/about' element={<About />} />
                 <Route index path='/stories' element={<Stories />} />
+                <Route index path='/story/:uid/:stripped' element={<StoryDetails />} />
                 <Route index path='/contact' element={<Contact />} />
                 <Route index path='*' element={<Contact />} />
             </Routes>
