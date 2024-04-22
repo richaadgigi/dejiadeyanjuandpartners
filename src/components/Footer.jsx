@@ -25,7 +25,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='xui-col-12 xui-lg-col-7 xui-lg-pl-2'>
+                <div className='xui-col-12 xui-lg-col-7 xui-lg-pl-2 xui-mt-4 xui-lg-mt-none'>
                     <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-2'>
                         <div>
                             <h4 className='xui-text-uppercase xui-font-sz-95'>Quick menu</h4>
@@ -38,7 +38,7 @@ const Footer = () => {
                                 <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Privacy Policy</a>
                             </div>
                         </div>
-                        <div>
+                        <div className='xui-mt-4 xui-lg-mt-none'>
                             <h4 className='xui-text-uppercase xui-font-sz-95'>Subscribe</h4>
                             <form className='dap-footer-subscribe xui-mt-2 xui-d-flex xui-flex-ai-center' action="">
                                 <input type="text" placeholder='subscribe@dap.com' />

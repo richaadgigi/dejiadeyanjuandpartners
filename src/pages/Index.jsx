@@ -13,7 +13,7 @@ const Index = () => {
         <section className='xui-px-1 xui-lg-px-2 dap-bg-primary'>
             <div className='dap-bg-accent xui-bdr-rad-1 xui-overflow-hidden xui-bg-pos-center xui-bg-sz-cover xui-bg-lazy' xui-bg-img={'https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}>
                 <div className='xui-overlay-1 xui-pt-4'>
-                    <div className='xui-lg-px-2 xui-py-2 xui-lg-py-4'>
+                    <div className='xui-px-1 xui-lg-px-2 xui-py-2 xui-lg-py-4'>
                         <h1 className='xui-font-sz-200 xui-lg-font-sz-250 xui-my-none xui-lg-w-fluid-80 xui-line-height-4'>DAP Law Firm: Where Experience Meets Innovation for Your Legal Solutions.</h1>
                         <p className='xui-opacity-6 xui-lg-w-fluid-60 xui-line-height-2 xui-font-sz-105 xui-mt-1'>At DAP Law Firm, expertise merges with innovation for personalized legal solutions. Led by Deji Adeyanju and Marvin Omorogbe, we prioritize swift, tailored advice and resolution. Experience unparalleled service and results with DAP Law Firm</p>
                         <Link to="/contact" className='xui-btn dap-bg-secondary xui-bdr-rad-5 xui-mt-2'>Book a consultation</Link>
@@ -59,7 +59,7 @@ const Index = () => {
                 <div className='xui-text-center'>
                     <h2 className='xui-text-capitalize xui-font-w-normal xui-font-sz-180 xui-lg-font-sz-180 xui-lg-w-fluid-90 xui-line-height-3 xui-mx-auto'>Our areas of practice</h2>
                 </div>
-                <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-3 xui-grid-gap-2 xui-mt-2'>
+                <div className='xui-d-grid xui-grid-col-2 xui-lg-grid-col-3 xui-grid-gap-2 xui-mt-2'>
                     <AreasPractice icon={<Partnership size={20} />} heading={"Human rights"} />
                     <AreasPractice icon={<Partnership size={20} />} heading={"Criminal law"} />
                     <AreasPractice icon={<Partnership size={20} />} heading={"Arbitration"} />

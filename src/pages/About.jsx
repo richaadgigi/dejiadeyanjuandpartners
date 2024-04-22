@@ -11,7 +11,7 @@ const About = () => {
             <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-2 xui-flex-ai-center'>
                 <div>
                     <span className='xui-d-inline-block xui-font-w-700 dap-text-secondary'>The DAP Law</span>
-                    <h1 className='xui-font-sz-200 xui-lg-font-sz-300 xui-line-height-5'>We bring to bear long-standing in-depth knowledge of our jurisdiction</h1>
+                    <h1 className='xui-font-sz-250 xui-lg-font-sz-300 xui-line-height-5'>We bring to bear long-standing in-depth knowledge of our jurisdiction</h1>
                 </div>
                 <div>
                     <img className='xui-img-500 xui-mx-auto' src="https://img.freepik.com/free-photo/view-3d-scales-justice-lawyer-s-day_23-2151023415.jpg?t=st=1713741421~exp=1713745021~hmac=fcbc566f47ac7a5d651675bba59a599392fedc62108c70a7d5c19dd7bae93e4a&w=740" alt="" />

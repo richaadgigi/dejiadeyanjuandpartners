@@ -24,7 +24,7 @@ const Contact = () => {
             </div>
         </section> */}
         <section className="xui-container xui-py-3 xui-lg-py-5">
-            <h2 className="xui-lg-w-fluid-70 xui-font-sz-150 xui-lg-font-sz-250 xui-line-height-4">Do not hesitate to reach out. Just fill in the contact form here and we'll be sure to reply as fast as possible.</h2>
+            <h2 className="xui-lg-w-fluid-70 xui-font-sz-250 xui-line-height-4">Do not hesitate to reach out. Just fill in the contact form here and we'll be sure to reply as fast as possible.</h2>
             <div className="xui-row xui-mt-4">
                 <div className="xui-col-12 xui-lg-col-4">
                     <h3 className="xui-font-sz-150 xui-mb-1">Message us</h3>
