@@ -1,5 +1,6 @@
 import { LogoInstagram, LogoX, Phone, Send } from "@carbon/icons-react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
     const name = useRef(null);
@@ -27,22 +28,22 @@ const Contact = () => {
             <div className="xui-row xui-mt-4">
                 <div className="xui-col-12 xui-lg-col-4">
                     <h3 className="xui-font-sz-150 xui-mb-1">Message us</h3>
-                    <a className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" href="mailto:info@dejiadeyanjuandpartners.com">
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" to="mailto:info@dejiadeyanjuandpartners.com">
                         <Send size={20} />
                         <span>Send us a message</span>
-                    </a>
-                    <a className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" href="">
+                    </Link>
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" target="_blank" to="https://x.com/DAPLawFirm">
                         <LogoX size={20} />
                         <span>Tweet Us</span>
-                    </a>
-                    <a className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" href="">
+                    </Link>
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" target="_blank" to="https://www.instagram.com/daplawfirm/">
                         <LogoInstagram size={20} />
                         <span>Follow Us on Instagram</span>
-                    </a>
-                    <a className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" href="">
+                    </Link>
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" to="tel:2347037717746">
                         <Phone size={20} />
                         <span>Call us now!</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="xui-col-12 xui-lg-col-8 xui-lg-pl-2">
                     <form className="xui-form" onSubmit={onSubmitHandler}>
