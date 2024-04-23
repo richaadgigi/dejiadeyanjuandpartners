@@ -30,10 +30,10 @@ const Footer = () => {
                         <div>
                             <h4 className='xui-text-uppercase xui-font-sz-95'>Quick menu</h4>
                             <div className='xui-d-flex xui-grid-gap-2 xui-mt-2'>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Homepage</a>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">About Us</a>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">FAQs</a>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Contact</a>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/">Homepage</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/about">About Us</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/stories">Stories</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/contact">Contact</Link>
                                 <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Terms of Use</a>
                                 <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Privacy Policy</a>
                             </div>
