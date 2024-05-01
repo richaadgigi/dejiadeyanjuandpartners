@@ -18,8 +18,9 @@ const Stories = () => {
             
         })
         .finally(() => {
+            window.xuiLazyLoadings();
         });
-    }, []);
+    }, [stories]);
     return (
         <section className='xui-container xui-py-3 xui-lg-py-4'>
             {stories && stories.count <= 0 && <div className='xui-my-2 xui-text-center'>

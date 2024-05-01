@@ -22,7 +22,7 @@ const StoryDetails = () => {
         })
         .finally(() => {
         });
-    }, []);
+    }, [story]);
     return (
         <>
         {!story && <section className='xui-container xui-py-3 xui-lg-py-5'>
