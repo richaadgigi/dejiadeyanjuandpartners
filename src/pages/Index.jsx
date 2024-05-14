@@ -73,7 +73,7 @@ const Index = () => {
                 </div>
             </div>
         </section>
-        <Partners />
+        {/* <Partners /> */}
         </>
     );
 };

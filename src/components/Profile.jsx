@@ -6,7 +6,7 @@ const Profile = (props) => {
     return (
         <>
         <div className='xui-text-center xui-cursor-pointer' xui-modal-open={text && text.length > 0 ? uid : 'false'}>
-            <div className='xui-bg-light xui-w-150 xui-h-150 xui-mx-auto xui-bdr-rad-circle xui-overflow-hidden'>
+            <div className='xui-bg-light xui-w-300 xui-h-300 xui-mx-auto xui-bdr-rad-circle xui-overflow-hidden'>
                 <img className='xui-w-fluid-100 xui-h-fluid-100' src={image} alt="" />
             </div>
             <h2 className='xui-font-sz-115 xui-mt-1-half'>{name}</h2>
