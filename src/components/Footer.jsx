@@ -23,6 +23,10 @@ const Footer = () => {
                             <Phone size={24} />
                             <span className='xui-font-sz-90 xui-opacity-6'>+234 (0) 703 771 7746</span>
                         </Link>
+                        <Link to={'tel:2348034486201'} className='xui-d-inline-flex xui-flex-ai-center xui-grid-gap-half xui-text-inherit xui-text-dc-none'>
+                            <Phone size={24} />
+                            <span className='xui-font-sz-90 xui-opacity-6'>+234 (0) 803 448 6201</span>
+                        </Link>
                     </div>
                 </div>
                 <div className='xui-col-12 xui-lg-col-7 xui-lg-pl-2 xui-mt-4 xui-lg-mt-none'>

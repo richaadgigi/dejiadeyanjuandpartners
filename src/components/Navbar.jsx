@@ -20,7 +20,7 @@ const Navbar = () => {
                             <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"/about"}><span className="xui-opacity-9">About Us</span></Link>
                         </li>
                         <li>
-                            <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"/stories"}><span className="xui-opacity-9">Stories</span></Link>
+                            <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"/stories"}><span className="xui-opacity-9">Blog</span></Link>
                         </li>
                         <li>
                             <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"/contact"}><span className="xui-opacity-9">Contact</span></Link>
