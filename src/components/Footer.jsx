@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-        <footer className='dap-bg-primary xui-text-white xui-container xui-py-2 xui-lg-py-4'>
+        <footer className='dap-bg-primary xui-text-white xui-container xui-py-2 xui-lg-py-4 dap-footer'>
             <div className='xui-row'>
                 <div className='xui-col-12 xui-lg-col-5 xui-lg-pr-2'>
                     <div className='xui-d-inline-flex xui-flex-ai-center xui-grid-gap-half'>
