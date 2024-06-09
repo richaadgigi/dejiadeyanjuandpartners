@@ -147,6 +147,9 @@ body {
     border-radius: 50%;
     border: none;
 }
+.xui-navbar .menu span {
+    background-color: var(--color-secondary);
+}
 .dap-navbar {
     position: fixed;
     top: 0;

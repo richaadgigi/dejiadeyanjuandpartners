@@ -24,7 +24,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="links" placed="left">
-                <div className="main green-bg">
+                <div className="main dap-bg-primary">
                     <ul>
                         <li>
                             <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"./"}><span className="xui-opacity-9">Home</span></Link>
@@ -39,6 +39,11 @@ const Navbar = () => {
                             <Link className="xui-font-sz-180 xui-md-font-sz-200 xui-lg-font-sz-90 xui-text-inherit" to={"/contact"}><span className="xui-opacity-9">Contact</span></Link>
                         </li>
                     </ul>
+                </div>
+                <div className="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </nav>
