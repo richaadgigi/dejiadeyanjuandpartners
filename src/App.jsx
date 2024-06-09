@@ -9,6 +9,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Stories from './pages/Stories';
 import Contact from './pages/Contact';
 import StoryDetails from './pages/StoryDetails';
+import TermsOfUse from './pages/TermsOfUse';
+import Privacy from './pages/Privacy';
 
 const App = () => {
     return (
@@ -22,7 +24,9 @@ const App = () => {
                 <Route index path='/stories' element={<Stories />} />
                 <Route index path='/story/:uid/:stripped' element={<StoryDetails />} />
                 <Route index path='/contact' element={<Contact />} />
-                <Route index path='*' element={<Contact />} />
+                <Route index path='/terms-of-use' element={<TermsOfUse />} />
+                <Route index path='/privacy-policy' element={<Privacy />} />
+                <Route index path='*' element={<Index />} />
             </Routes>
             <Footer />
         </BrowserRouter>

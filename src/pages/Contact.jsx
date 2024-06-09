@@ -1,6 +1,7 @@
 import { LogoInstagram, LogoX, Phone, Send } from "@carbon/icons-react";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import NavbarSpacing from "../components/NavbarSpacing";
 
 const Contact = () => {
     const name = useRef(null);
@@ -15,14 +16,19 @@ const Contact = () => {
         formData.message = message.current.value;
         window.open("mailto:info@http://dejiadeyanjuandpartners.com/?subject="+ formData.subject +"&body="+ encodeURI(formData.message));
     }
+    useEffect(() => {
+        window.xuiLazyLoadings();
+        window.xuiScrollOnAnimation();
+    }, []);
     return (
         <>
-        {/* <section className="xui-bg-pos-center xui-bg-sz-cover xui-bg-lazy" style={{backgroundImage: `url('https://images.pexels.com/photos/5668473/pexels-photo-5668473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`}}>
-            <div className="xui-overlay-2 xui-container xui-py-4 xui-lg-py-8">
-                <h1 className="xui-font-sz-300 xui-lg-font-sz-400 xui-lg-w-fluid-80 xui-w-fluid-100 xui-font-10">Contact Us</h1>
-                <p className="xui-font-sz-100 xui-opacity-8 xui-lg-w-fluid-50 xui-line-height-2 xui-mt-1">Want to consult about our services or having any troubles? Just chat us on live or leave an email about your queries to get instant solution. Our support team is always glad to resolve your queries as soon as they can.</p>
+        <section className='xui-bg-pos-center xui-bg-sz-cover xui-bg-lazy' xui-bg-img={'https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}>
+            <div className='dap-overlay-dark xui-container dap-bg-primary-overlay xui-text-white xui-py-8 xui-lg-py-8'>
+                <NavbarSpacing />
+                <h1 xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='bebas-neue-regular xui-font-sz-350 xui-lg-font-sz-500 xui-my-none xui-lg-w-fluid-80'>Send us a message</h1>
+                {/* <Button path={'/contact'} others={'xui-mt-1'} text={'Book a consultation'} color={'var(--color-white)'} /> */}
             </div>
-        </section> */}
+        </section>
         <section className="xui-container xui-py-3 xui-lg-py-5">
             <h2 className="xui-lg-w-fluid-70 xui-font-sz-250 xui-line-height-4">Do not hesitate to reach out. Just fill in the contact form here and we'll be sure to reply as fast as possible.</h2>
             <div className="xui-row xui-mt-4">

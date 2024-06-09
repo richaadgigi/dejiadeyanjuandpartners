@@ -36,10 +36,10 @@ const Footer = () => {
                             <div className='xui-d-flex xui-grid-gap-2 xui-mt-2'>
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/">Homepage</Link>
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/about">About Us</Link>
-                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/stories">Stories</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/stories">Blog</Link>
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/contact">Contact</Link>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Terms of Use</a>
-                                <a className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' href="#">Privacy Policy</a>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/terms-of-use">Terms of Use</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/privacy-policy">Privacy Policy</Link>
                             </div>
                         </div>
                         <div className='xui-mt-4 xui-lg-mt-none'>

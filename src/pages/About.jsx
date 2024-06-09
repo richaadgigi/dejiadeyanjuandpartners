@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Partners from '../components/Partners';
 import Profile from '../components/Profile';
 import { Partnership } from '@carbon/icons-react';
 import AreasPractice from '../components/AreasPractice';
+import Button from '../components/Button';
+import NavbarSpacing from '../components/NavbarSpacing';
 
 const About = () => {
+    useEffect(() => {
+        window.xuiLazyLoadings();
+        window.xuiScrollOnAnimation();
+    }, []);
     return (
         <>
-        <section className='xui-container xui-py-3 xui-lg-py-4'>
-            <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-2 xui-flex-ai-center'>
-                <div>
-                    <span className='xui-d-inline-block xui-font-w-700 dap-text-secondary'>The DAP Law</span>
-                    <h1 className='xui-font-sz-250 xui-lg-font-sz-300 xui-line-height-5'>We bring to bear long-standing in-depth knowledge of our jurisdiction</h1>
-                </div>
-                <div>
-                    <img className='xui-img-500 xui-mx-auto' src="https://img.freepik.com/free-photo/view-3d-scales-justice-lawyer-s-day_23-2151023415.jpg?t=st=1713741421~exp=1713745021~hmac=fcbc566f47ac7a5d651675bba59a599392fedc62108c70a7d5c19dd7bae93e4a&w=740" alt="" />
-                </div>
+        <section className='xui-bg-pos-center xui-bg-sz-cover xui-bg-lazy' xui-bg-img={'https://images.unsplash.com/photo-1568092806323-8ec13dfa9b92?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}>
+            <div className='dap-overlay-dark xui-container dap-bg-primary-overlay xui-text-white xui-py-8 xui-lg-py-8'>
+                <NavbarSpacing />
+                <h1 xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='bebas-neue-regular xui-font-sz-350 xui-lg-font-sz-500 xui-my-none xui-lg-w-fluid-80'>We bring to bear long-standing in-depth knowledge of our jurisdiction</h1>
+                {/* <Button path={'/contact'} others={'xui-mt-1'} text={'Book a consultation'} color={'var(--color-white)'} /> */}
             </div>
         </section>
         <section className='xui-container xui-py-3 xui-lg-py-5'>
@@ -24,10 +26,10 @@ const About = () => {
                     <img src="https://images.pexels.com/photos/5668484/pexels-photo-5668484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" className='xui-w-fluid-100 xui-lg-mt-2 xui-bdr-rad-1' alt="the law" />
                 </div>
                 <div>
-                    <h1 className='xui-font-sz-200 xui-lg-font-sz-350 xui-line-height-5'>The story</h1>
-                    <p className='xui-line-height-2 xui-opacity-8'>DEJI ADEYANJU & PARTNERS (DAP) is a full service law firm manned by very experienced legal practitioners with diverse areas of practice. The firm adopts a partner/senior associate led approach to solving client's issues, wherein associates are paired with a more experienced partner or senior associate. While the Partner or senior associate brings his or her experience to bear in meeting the client's need, the associate also takes it as an opportunity to learn, and at the same time, rendering support to the Partner or senior associate.</p>
-                    <p className='xui-line-height-2 xui-opacity-8 xui-mt-2'>The firm is led by its two lead partners, Deji Adeyanju, Esq and Marvin Omorogbe, Esq, who have demonstrated proven capacity in their area of expertise cutting across human rights, criminal law, arbitration, corporate and commercial law, oil and gas, tech and entertainment law, election petition law, banking and finance, etc. The firm prides itself on its professionalism, quick response time, confidentiality, and excellent service delivery to its array of clients.</p>
-                    <p className='xui-line-height-2 xui-opacity-8 xui-mt-2'>Recognising the importance of collaboration, the firm may, where necessary, collaborate with other firms in reaching the client's goal. The firm's associates are encouraged to develop interests in specific areas of law, affording them, the firm and our clients the benefit of a degree of specialization which modern law firms are increasingly being tailored towards. </p>
+                    <h1 xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='bebas-neue-regular xui-font-sz-300 xui-lg-font-sz-350 xui-line-height-5'>The story</h1>
+                    <p xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='xui-line-height-2 xui-opacity-8'>DEJI ADEYANJU & PARTNERS (DAP) is a full service law firm manned by very experienced legal practitioners with diverse areas of practice. The firm adopts a partner/senior associate led approach to solving client's issues, wherein associates are paired with a more experienced partner or senior associate. While the Partner or senior associate brings his or her experience to bear in meeting the client's need, the associate also takes it as an opportunity to learn, and at the same time, rendering support to the Partner or senior associate.</p>
+                    <p xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='xui-line-height-2 xui-opacity-8 xui-mt-2'>The firm is led by its two lead partners, Deji Adeyanju, Esq and Marvin Omorogbe, Esq, who have demonstrated proven capacity in their area of expertise cutting across human rights, criminal law, arbitration, corporate and commercial law, oil and gas, tech and entertainment law, election petition law, banking and finance, etc. The firm prides itself on its professionalism, quick response time, confidentiality, and excellent service delivery to its array of clients.</p>
+                    <p xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='xui-line-height-2 xui-opacity-8 xui-mt-2'>Recognising the importance of collaboration, the firm may, where necessary, collaborate with other firms in reaching the client's goal. The firm's associates are encouraged to develop interests in specific areas of law, affording them, the firm and our clients the benefit of a degree of specialization which modern law firms are increasingly being tailored towards. </p>
                 </div>
             </div>
         </section>
@@ -35,14 +37,14 @@ const About = () => {
             <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-2 xui-grid-gap-2'>
                 <div>
                     <span className='xui-d-inline-block xui-font-w-700 dap-text-secondary'>The Vision</span>
-                    <h1 className='xui-font-sz-200 xui-lg-font-sz-300 xui-line-height-5'>...to be among the top four best law firms in Nigeria within the next 4 years.</h1>
+                    <h1 className='bebas-neue-regular xui-font-sz-300 xui-lg-font-sz-400 xui-line-height-5'>...to be among the top four best law firms in Nigeria within the next 4 years.</h1>
                 </div>
                 <div></div>
             </div>
         </section>
         {/* <Partners /> */}
         <section className='xui-container xui-py-3 xui-lg-py-5'>
-            <h1 className='xui-font-sz-200 xui-lg-font-sz-250 xui-line-height-4'>The people behind the case</h1>
+            <h1 className='bebas-neue-regular xui-font-sz-300 xui-lg-font-sz-400 xui-line-height-4'>The people behind the case</h1>
             <p className='xui-line-height-2 xui-opacity-8 xui-lg-w-fluid-75'>The firm runs a partnership led practice, with its co-founders Deji Adeyanju, Esq and Marvin Omorogbe, Esq leading a team of other partners and senior associates, who in turn, lead a team of associates. Our partners, senior associates and associates represent some of the most experienced and diligent legal practitioners in their respective areas of specialization.</p>
             <div className='xui-d-grid xui-grid-col-1 xui-lg-grid-col-3 xui-grid-gap-5 xui-mt-3'>
                 <Profile uid={"MOE"} image={"https://res.cloudinary.com/xnyder/image/upload/v1715693618/dejiadeyanjuandpartners/WhatsApp_Image_2024-05-10_at_21.49.19_3c339309_ytzy8e.jpg"} name={"Marvin Omorogbe, Esq"} role={"Founding Partner"} text={["Marvin Omorogbe was admitted to the Nigerian bar over a decade ago and he has extensive practice across all Nigerian courts. He has two undergraduate degrees, Bachelor of Laws, as well as BA(Hons) English and Literature, from reputable Nigerian universities, and just recently, successfully defended his masters thesis on the widening gap between directors and shareholders and its implications on corporate governance under the Companies and Allied Matters Act. Prior to co-founding Deji-Adeyanju & Partners, he worked with notable law firms like S.S Ameh (SAN) & Co, J.B Majiyagbe and Co, established by the late J.B Majiyagbe, SAN, the first Nigerian lawyer practising in Northern Nigeria to be elevated to the prestigious rank of Senior Advocate, and also established and managed the law firm of Omorogbe-Osagie & Co.", "Marvin's area of specialisation includes corporate governance, commercial law, compliance, electoral law, litigation and general advisory services. Marvin is also an experienced court room advocate and he has deployed his knowledge of legal principles to represent different clients. He has represented notable government and private clients, including subsidiaries of Nigeria's foremost oil corporation and other transnational clients seeking to establish business in Nigeria. He has served as a member of the team of legal practitioners engaged in several pre and post election disputes, with the latest being a member of the team of legal practitioners that represented the governor of Delta State in the pre-election litigation leading to the 2023 governorship election in Delta State, Nigeria.", "He also renders advisory services to several local and international non-governmental organisations. He is an active member of the Nigerian Bar Association and carries out his practice from Abuja, Nigeria. Marvin's hobby includes reading and teaching."]} />
@@ -50,6 +52,7 @@ const About = () => {
                 <Profile uid={"ZMO"} image={"https://res.cloudinary.com/xnyder/image/upload/v1715693618/dejiadeyanjuandpartners/WhatsApp_Image_2024-05-10_at_21.51.10_7babe41c_netnuu.jpg"} name={"Mrs. Zainab Mohammed Otega, Esq"} role={"Senior Associate"} text={["Zainab M. Otega Esq., is a driven and detail-oriented senior associate at the law of Deji Adeyanju & partners with nearly a decade of experience working in the legal profession. She is recognized as a formidable force in the legal field due to her wealth of knowledge and experience in corporate, commercial and compliance law as well as an impeccable tract records under her belt.", "Prior to joining the law firm of Deji Adeyanju & Partners, Zainab worked for a prestigious law firm in Delta State, Nigeria, where she honed her skills and built a strong foundation in corporate and commercial law and made countless representations for one of Nigeria leading Banks, First Bank of Nigeria Ltd. Now as a senior associate of Deji Adeyanju & Partners, Zainab has continued to push the boundaries of success in the corporate, commercial and compliance legal world."]} />
                 <Profile uid={"BMS"} image={"https://res.cloudinary.com/xnyder/image/upload/v1715693618/dejiadeyanjuandpartners/WhatsApp_Image_2024-05-10_at_21.53.26_dbd0c336_c0b4o4.jpg"} name={"Bahija Ma'aji Said"} role={"Associate"} text={["Bahija Ma'aji Said is a dedicated and enthusiastic legal professional. She holds an LLB from Nasarawa State University and was duly called to the Nigerian Bar. With a keen interest for the law, she is eager to apply her knowledge and skills to make a meaningful difference in the Nigerian legal community. Bahija is committed to excellence and is driven to leave a positive mark in the legal field."]} />
                 <Profile uid={"REH"} image={"https://res.cloudinary.com/xnyder/image/upload/v1715693618/dejiadeyanjuandpartners/WhatsApp_Image_2024-05-10_at_21.53.44_5ac0393f_wlsqhd.jpg"} name={"Rosemary Emmanuel Hamza"} role={"Associate"} text={["Rosemary Emmanuel Hamza is a lawyer proficient in Litigation and Corporate Law who graduated with honors from Kogi State University and was duly called to the Nigerian Bar. Skilled in legal research, writing, and client advocacy, she is committed to providing excellent legal service. She is passionate about using her legal skills to make a positive impact in the world and to promote justice, equality and equity."]} />
+                <Profile uid={"SSO"} image={"https://res.cloudinary.com/xnyder/image/upload/v1717931352/dejiadeyanjuandpartners/IMG_0108_cggty5.jpg"} name={"Silas Onwugbonu, Esq"} role={"Senior Associate and Head of Dispute Resolution"} text={["Silas Onwugbonu Esq is a senior Associate and Head of Dispute Resolution at the law firm of Deji Adeyanju &  Partners.  He is an experienced professional with  more than a decade of active legal practice.", "He comes with a cross functional expertise  in Corporate and Commercial law, Alternative Dispute Resolution, research,Litigation and Public relations.", "He has rounded up an LLM program in Investment Law and Practice at the Nassarawa State University,Keffi.", "He has  an Advanced Certificate in Journalism, Public relations and Advertising from the International Institute of Journalism,Abuja; and also a member of the Institute of ADR Registrar.", "He is endowed with an excellent perception of issues, a good team player, and He is a Notary Public of Nigeria."]} />
             </div>
         </section>
         <section className='xui-container xui-py-3 xui-lg-py-5'>

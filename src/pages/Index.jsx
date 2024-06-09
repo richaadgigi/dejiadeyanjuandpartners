@@ -9,18 +9,21 @@ import FetchStories from '../components/FetchStories';
 import WelcomeMessage from '../components/WelcomeMessage';
 import BookACall from '../components/BookACall';
 import Guide from '../components/Guide';
+import NavbarSpacing from '../components/NavbarSpacing';
 
 const Index = () => {
     useEffect(() => {
         setTimeout(() => {
             window.xuiLazyLoadings();
+            window.xuiScrollOnAnimation();
         });
     }, []);
     return (
         <>
         <section className='xui-bg-pos-center xui-bg-sz-cover xui-bg-lazy' xui-bg-img={'https://images.unsplash.com/photo-1589391886645-d51941baf7fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}>
             <div className='dap-overlay-dark xui-container dap-bg-primary-overlay xui-text-white xui-py-8 xui-lg-py-8'>
-                <h1 className='bebas-neue-regular xui-font-sz-350 xui-lg-font-sz-500 xui-my-none xui-lg-w-fluid-80'>Where Experience Meets Innovation for Your Legal Solutions.</h1>
+                <NavbarSpacing />
+                <h1 xui-aos={'fade-up'} xui-aos-duration={2} xui-aos-delay={.08} xui-aos-once={'exists'} className='bebas-neue-regular xui-font-sz-350 xui-lg-font-sz-500 xui-my-none xui-lg-w-fluid-80'>Where Experience Meets Innovation for Your Legal Solutions.</h1>
                 <Button path={'/contact'} others={'xui-mt-1'} text={'Book a consultation'} color={'var(--color-white)'} />
             </div>
         </section>

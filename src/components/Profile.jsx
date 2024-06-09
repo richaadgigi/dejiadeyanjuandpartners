@@ -9,15 +9,15 @@ const Profile = (props) => {
             <div className='xui-bg-light xui-w-300 xui-h-300 xui-mx-auto xui-bdr-rad-circle xui-overflow-hidden'>
                 <img className='xui-w-fluid-100 xui-h-fluid-100' src={image} alt="" />
             </div>
-            <h2 className='xui-font-sz-115 xui-mt-1-half'>{name}</h2>
+            <h2 className='bebas-neue-regular xui-font-sz-150 xui-mt-1-half'>{name}</h2>
             <span className='xui-d-inline-block xui-opacity-8 xui-font-sz-90'>{role}</span>
         </div>
         <section className='xui-modal xui-modal-top-right' xui-modal={uid}>
             <div className='xui-modal-content xui-max-w-400'>
                 <div className='xui-d-flex xui-flex-jc-space-between'>
-                    <div>
-                        <h3>{name}</h3>
-                        <span className='xui-d-inline-block xui-opacity-5 xui-font-sz-85'>{role}</span>
+                    <div style={{width: 'calc(100% - 50px)'}}>
+                        <h3 className='bebas-neue-regular xui-font-sz-200'>{name}</h3>
+                        <span className='xui-d-inline-block xui-mt--1 xui-opacity-5 xui-font-sz-85'>{role}</span>
                     </div>
                     <div className='xui-w-50 xui-h-50 xui-bg-light xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-cursor-pointer' xui-modal-close={uid}>
                         <Close size={24} />

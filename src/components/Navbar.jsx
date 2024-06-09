@@ -7,7 +7,6 @@ const Navbar = () => {
     useEffect(() => {
         document.addEventListener('scroll', function() {
             const navbarEl = document.querySelector(".dap-navbar");
-            console.log(navbarEl);
             const scrollPosition = window.scrollY || document.documentElement.scrollTop;
             if (scrollPosition > 50) {
                 setShowBg(true);
@@ -17,7 +16,7 @@ const Navbar = () => {
         });
     }, []);
     return (
-        <nav className={'dap-navbar xui-text-white xui-navbar xui-container xui-navbar-blurred ' + (showBg && 'dap-navbar-show')} brand="true" layout="1" menu="2">
+        <nav className={'dap-navbar xui-text-white xui-navbar xui-container ' + (showBg && 'dap-navbar-show xui-navbar-blurred')} brand="true" layout="1" menu="2">
             <div className="brand">
                 <Link className="xui-text-dc-none xui-text-inherit xui-d-inline-flex xui-flex-ai-center" to={'/'}>
                     <img className='xui-img-200' src={NavbarLogo} alt="logo" />
