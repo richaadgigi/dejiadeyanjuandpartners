@@ -50,10 +50,10 @@ const AreasOfPractice = () => {
             <AreasOfPracticeCard image={"https://images.pexels.com/photos/8112195/pexels-photo-8112195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Corporate and Commercial law'} />
             <AreasOfPracticeCard image={"https://images.pexels.com/photos/11610272/pexels-photo-11610272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Oil and gas law'} />
             <AreasOfPracticeCard image={"https://images.pexels.com/photos/4101026/pexels-photo-4101026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Tech and entertainment law'} />
-            <AreasOfPracticeCard image={"https://img.freepik.com/free-photo/person-holding-speech-official-event_23-2151054199.jpg?t=st=1717922303~exp=1717925903~hmac=46666298345de21cc0683063adac6a9513861c80b76fb309bf4948700dac16b2&w=360"} text={'Election petition law'} />
-            <AreasOfPracticeCard image={"https://img.freepik.com/premium-photo/young-woman-using-mobile-phone-while-sitting-home_1048944-14900010.jpg?w=360"} text={'Banking and finance'} />
-            <AreasOfPracticeCard image={"https://img.freepik.com/free-photo/people-working-their-office_23-2149196409.jpg?t=st=1717922554~exp=1717926154~hmac=bc04c3488c0dbeea8386571dcaadc5cb24062442767a2f59fc486fdb80ba5070&w=360"} text={'Advisory and compliance services'} />
-            <AreasOfPracticeCard image={"https://img.freepik.com/free-photo/close-up-judge-gavel-with-its-striking-block_23-2148230087.jpg?t=st=1717922625~exp=1717926225~hmac=663b861636314189dfae4f0c6f84aed723e300ceae7293a180073540e69839ec&w=740"} text={'Litigation'} />
+            <AreasOfPracticeCard image={"https://images.pexels.com/photos/10401267/pexels-photo-10401267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Election petition law'} />
+            <AreasOfPracticeCard image={"https://images.pexels.com/photos/5909798/pexels-photo-5909798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Banking and finance'} />
+            <AreasOfPracticeCard image={"https://images.pexels.com/photos/4098232/pexels-photo-4098232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Advisory and compliance services'} />
+            <AreasOfPracticeCard image={"https://images.pexels.com/photos/8731031/pexels-photo-8731031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"} text={'Litigation'} />
         </div>
       </section>
     );
