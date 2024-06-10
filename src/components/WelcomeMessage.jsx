@@ -16,7 +16,7 @@ const WelcomeMessage = () => {
                 start: 'top top',
                 end: 'bottom bottom',
                 markers: false,
-                scrub: 1
+                scrub: 2
             }
         });
     });
