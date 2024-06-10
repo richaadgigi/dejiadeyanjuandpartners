@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Email, LogoInstagram, LogoX, Phone } from '@carbon/icons-react';
+import { ArrowRight, Email, LogoFacebook, LogoInstagram, LogoLinkedin, LogoX, Phone } from '@carbon/icons-react';
 import Logo from "../assets/images/logo-square-white.png"
 import { Link } from 'react-router-dom';
 
@@ -56,6 +56,12 @@ const Footer = () => {
                                 </Link>
                                 <Link target='_blank' to={'https://www.instagram.com/daplawfirm/'} className='xui-w-40 xui-h-40 xui-bdr-rad-circle xui-bg-white xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-text-black'>
                                     <LogoInstagram size={20} />
+                                </Link>
+                                <Link target='_blank' to={'https://web.facebook.com/profile.php?id=61557483726383'} className='xui-w-40 xui-h-40 xui-bdr-rad-circle xui-bg-white xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-text-black'>
+                                    <LogoFacebook size={20} />
+                                </Link>
+                                <Link target='_blank' to={'https://www.linkedin.com/company/daplawfirm/'} className='xui-w-40 xui-h-40 xui-bdr-rad-circle xui-bg-white xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-text-black'>
+                                    <LogoLinkedin size={20} />
                                 </Link>
                             </div>
                         </div>

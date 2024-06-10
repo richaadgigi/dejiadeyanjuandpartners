@@ -1,4 +1,4 @@
-import { LogoInstagram, LogoX, Phone, Send } from "@carbon/icons-react";
+import { LogoFacebook, LogoInstagram, LogoLinkedin, LogoX, Phone, Send } from "@carbon/icons-react";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import NavbarSpacing from "../components/NavbarSpacing";
@@ -45,6 +45,14 @@ const Contact = () => {
                     <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" target="_blank" to="https://www.instagram.com/daplawfirm/">
                         <LogoInstagram size={20} />
                         <span>Follow Us on Instagram</span>
+                    </Link>
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" target="_blank" to="https://web.facebook.com/profile.php?id=61557483726383">
+                        <LogoFacebook size={20} />
+                        <span>Find Us on Facebook</span>
+                    </Link>
+                    <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" target="_blank" to="https://www.linkedin.com/company/daplawfirm/">
+                        <LogoLinkedin size={20} />
+                        <span>We are on Linkedin</span>
                     </Link>
                     <Link className="xui-btn-block dap-bg-primary xui-text-white xui-font-sz-80 xui-d-inline-block xui-my-half xui-d-flex xui-flex-ai-center xui-flex-jc-center xui-grid-gap-half" to="tel:2347037717746">
                         <Phone size={20} />
