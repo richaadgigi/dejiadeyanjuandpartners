@@ -38,8 +38,8 @@ const Footer = () => {
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/about">About Us</Link>
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/stories">Blog</Link>
                                 <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/contact">Contact</Link>
-                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/terms-of-use">Terms of Use</Link>
-                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/privacy-policy">Privacy Policy</Link>
+                                {/* <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/terms-of-use">Terms of Use</Link>
+                                <Link className='xui-opacity-5 xui-font-sz-90 xui-text-inherit xui-text-dc-none xui-d-inline-block' to="/privacy-policy">Privacy Policy</Link> */}
                             </div>
                         </div>
                         <div className='xui-mt-4 xui-lg-mt-none'>
